@@ -4,7 +4,7 @@ import { Images } from "../../Constants";
 import { HiMenuAlt4, HiX } from "react-icons/hi";
 import { motion } from "framer-motion";
 
-const menu = ["Home", "About", "Work", "Skills", "Contact"];
+const menu = ["home", "about", "work", "skills", "contact"];
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);

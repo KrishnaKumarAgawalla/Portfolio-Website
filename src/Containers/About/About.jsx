@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./About.scss";
 import { motion } from "framer-motion";
-import { Images } from "../../Constants";
 import { urlFor, client } from "../../client";
+import { AppWrapper } from "../../wrapper";
 
 const About = () => {
   const [abouts, setAbouts] = useState([]);
@@ -27,12 +27,12 @@ const About = () => {
         {abouts.map((about, index) => (
           <motion.div
             whileInView={{ opacity: 1 }}
-            whileHover={{ scale: 1.5 }}
+            whileHover={{ scale: 1.1 }}
             transition={{ duration: 0.5, type: "tween" }}
             className="app__profile-item"
             key={about.title + index}
           >
-            <img src={about.imgUrl} alt={about.title} />
+            <img src={urlFor(about.imgUrl)} alt={about.title} />
             <h2 className="bold-text" style={{ marginTop: 20 }}>
               {about.title}
             </h2>
@@ -46,4 +46,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default AppWrapper(About, "about");

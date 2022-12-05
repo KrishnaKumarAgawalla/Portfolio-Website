@@ -87,7 +87,7 @@
   }
 
   @media screen and (max-width: 1200px) {
-    justify-content: start;
+    justify-content: flex-start;
     align-items: flex-start;
   }
 }
@@ -110,8 +110,8 @@
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 
     img {
-        width: 60%;
-        height: 60%;
+      width: 60%;
+      height: 60%;
     }
   }
 
@@ -119,7 +119,7 @@
     width: 100px;
     height: 100px;
   }
-  
+
   div:nth-child(2) {
     margin: 1.75rem;
     width: 150px;
@@ -133,59 +133,59 @@
 
   @media screen and (min-width: 2000px) {
     div:nth-child(1) {
-        width: 200px;
-        height: 200px;
-      }
-      
-      div:nth-child(2) {
-        width: 400px;
-        height: 400px;
-      }
-    
-      div:nth-child(3) {
-        width: 150px;
-        height: 150px;
-      }
+      width: 200px;
+      height: 200px;
+    }
+
+    div:nth-child(2) {
+      width: 400px;
+      height: 400px;
+    }
+
+    div:nth-child(3) {
+      width: 150px;
+      height: 150px;
+    }
   }
 
   @media screen and (max-width: 1200px) {
-width: 100%;
-flex-direction: row;
-margin-left: 0;
-flex-wrap: wrap;
+    width: 100%;
+    flex-direction: row;
+    margin-left: 0;
+    flex-wrap: wrap;
 
-    div{
-        margin: 1rem;
+    div {
+      margin: 1rem;
     }
   }
 }
 
 .app__header-img {
-    flex: 1;
-    height: 100%;
+  flex: 1;
+  height: 100%;
 
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  position: relative;
 
-    img {
-        width: 100%;
-        object-fit: contain;
-        z-index: 1;
-    }
+  img {
+    width: 100%;
+    object-fit: contain;
+    z-index: 1;
+  }
 
-    .overlay_circle {
-        position: absolute;
-        right: 0;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        height: 90%;
-        z-index: 0;
-    }
+  .overlay_circle {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 90%;
+    z-index: 0;
+  }
 
-    @media screen and (max-width: 1200px) {
-        margin: 2rem 0;
-    }
+  @media screen and (max-width: 1200px) {
+    margin: 2rem 0;
+  }
 }
