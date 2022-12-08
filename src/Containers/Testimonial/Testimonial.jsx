@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { HiChevronLeft, HiChevronRight } from "react-icons/hi";
+// import { HiChevronLeft, HiChevronRight } from "react-icons/hi";
 import { motion } from "framer-motion";
 import { AppWrapper, MotionWrapper } from "../../wrapper";
 import { urlFor, client } from "../../client";
@@ -10,9 +10,9 @@ const Testimonial = () => {
   const [testimonials, setTestimonials] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const handleClick = (index) => {
-    setCurrentIndex(index);
-  };
+  // const handleClick = (index) => {
+  //   setCurrentIndex(index);
+  // };
 
   useEffect(() => {
     const brandsQuery = '*[_type == "brands"]';
