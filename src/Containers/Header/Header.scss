@@ -43,7 +43,9 @@
   flex-direction: column;
   height: 100%;
 
-  @media screen and (max-width: 2000px) {
+  margin: 0 2rem;
+
+  @media screen and (max-width: 1200px) {
     width: 100%;
     margin-right: 0;
   }
@@ -156,6 +158,21 @@
 
     div {
       margin: 1rem;
+    }
+
+    div:nth-child(1) {
+      width: 3.75rem;
+      height: 3.75rem;
+    }
+
+    div:nth-child(2) {
+      width: 6.25rem;
+      height: 6.25rem;
+    }
+
+    div:nth-child(3) {
+      width: 3.75rem;
+      height: 3.75rem;
     }
   }
 }
