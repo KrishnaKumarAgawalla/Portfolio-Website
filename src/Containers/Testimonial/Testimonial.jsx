@@ -44,7 +44,9 @@ const Testimonial = () => {
             </div>
           </div>
 
-          <div className="app__testimonial-btns app__flex">
+          {/* Uncomment if more than One Testimonial to get the Arrows */}
+
+          {/* <div className="app__testimonial-btns app__flex">
             <div
               className="app__flex"
               onClick={() =>
@@ -69,7 +71,7 @@ const Testimonial = () => {
             >
               <HiChevronRight />
             </div>
-          </div>
+          </div> */}
 
           <div className="app__testimonials-brands app__flex">
             {brands.map((brand) => (
