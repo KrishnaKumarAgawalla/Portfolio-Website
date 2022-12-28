@@ -1,4 +1,7 @@
 {
+  "engines": {
+    "node": ">=10.18.0"
+  },
   "name": "frontend_react",
   "version": "0.1.0",
   "private": true,
