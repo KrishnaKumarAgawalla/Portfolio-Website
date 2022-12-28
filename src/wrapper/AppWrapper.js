@@ -3,6 +3,8 @@ import { NavigationDots, SocialMedia } from "../Components";
 
 const AppWrapper = (Components, idName, classNames) =>
   function HOC() {
+    const date = new Date();
+    const year = date.getFullYear();
     return (
       <div id={idName} className={`app__container ${classNames}`}>
         <SocialMedia />
@@ -11,7 +13,7 @@ const AppWrapper = (Components, idName, classNames) =>
           <Components />
 
           <div className="copyright">
-            <p className="p-text">@2022 Krishna</p>
+            <p className="p-text">{"@"+year+" Krishna"}</p>
             <p className="p-text">All rights reserved</p>
           </div>
         </div>

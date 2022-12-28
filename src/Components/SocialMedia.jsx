@@ -1,14 +1,17 @@
 import React from "react";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 
+const git = "https://github.com/KrishnaKumarAgawalla";
+const linkedIn = "https://www.linkedin.com/in/krishnakumaragrawalla/";
+
 const SocialMedia = () => {
   return (
     <div className="app__social">
       <div>
-        <BsGithub />
+        <BsGithub onClick={() => window.open(git)} />
       </div>
       <div>
-        <BsLinkedin />
+        <BsLinkedin onClick={() => window.open(linkedIn)} />
       </div>
     </div>
   );
