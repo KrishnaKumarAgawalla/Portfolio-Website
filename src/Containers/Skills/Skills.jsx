@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Tooltip from "react-tooltip";
+import { Tooltip } from "react-tooltip";
 import { motion } from "framer-motion";
 import { AppWrapper, MotionWrapper } from "../../wrapper";
 import { urlFor, client } from "../../client";
@@ -54,7 +54,7 @@ const Skills = () => {
               </div>
               <motion.div className="app__skills-exp-works">
                 {experience.works.map((work) => (
-                  <div key={work.name} >
+                  <div key={work.name}>
                     <motion.div
                       whileInView={{ opacity: [0, 1] }}
                       transition={{ duration: 0.5 }}
@@ -88,5 +88,5 @@ const Skills = () => {
 export default AppWrapper(
   MotionWrapper(Skills, "app__skills"),
   "skills",
-  "app__whitebg",
+  "app__whitebg"
 );
