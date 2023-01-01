@@ -68,6 +68,7 @@ const Skills = () => {
                     </motion.div>
                     <Tooltip
                       id={work.name}
+                      anchorId={work.name}
                       effect="solid"
                       arrowColor="#fff"
                       className="skills-tooltip"
