@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Tooltip } from "react-tooltip";
+import "react-tooltip/dist/react-tooltip.css";
 import { motion } from "framer-motion";
 import { AppWrapper, MotionWrapper } from "../../wrapper";
 import { urlFor, client } from "../../client";
@@ -59,8 +60,7 @@ const Skills = () => {
                       whileInView={{ opacity: [0, 1] }}
                       transition={{ duration: 0.5 }}
                       className="app__skills-exp-work"
-                      data-tip
-                      data-for={work.name}
+                      data-tooltip-id={work.name}
                       key={work.name}
                     >
                       <h4 className="bold-text">{work.name}</h4>
